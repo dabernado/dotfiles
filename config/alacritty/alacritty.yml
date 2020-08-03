@@ -98,7 +98,7 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: Alagard
+    family: Hack Nerd Font
   # Normal (roman) font face
   #normal:
     # Font family
