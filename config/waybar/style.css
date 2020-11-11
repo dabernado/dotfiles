@@ -1,126 +1,44 @@
 * {
-    padding: 0px;
-    transition-duration: 0s;
-    font-family: Alagard;
-}
-
-window#waybar {
-    background-color: rgba(1,1,1,0);
-}
-
-#workspaces button {
-    margin: 3px 5px 0px 5px
-}
-
-#workspaces button {
-    border-radius: 2px;
-    color: #52cd91;
-}
-
-#workspaces button,
-#clock, 
-#battery {
-    font-size: 15px;
-}
-
-#workspaces button label {
-    background: transparent;
-    color: #3d3d3d;
-}
-
-#workspaces button:last-child {
-    border-radius: 2px 8px 8px 2px;
-}
-
-#workspaces button:first-child {
-    border-radius: 8px 2px 2px 8px;
-}
-
-#workspaces button:only-child {
-    border-radius: 8px 8px 8px 8px;
-}
-
-#workspaces button:nth-child(1) {
-    background-color: #dbf0d3; 
-    border-color: #dbf0d3;
-}
-
-#workspaces button:nth-child(2) {
-    background-color: #ade6d4;
-    border-color: #ade6d4;
-}
-
-#workspaces button:nth-child(3) {
-    background-color: #8bc4b2; 
-    border-color: #8bc4b2;
-}
-
-#workspaces button:nth-child(4) {
-    background-color: #79b285; 
-    border-color: #79b285;
-    
-}
-
-#workspaces button:nth-child(5) {
-    background-color: #69a290; 
-    border-color: #69a290;
-}
-
-#workspaces button:nth-child(6) {
-    background-color: #699778; 
-    border-color: #699778;
-}
-
-#workspaces button:nth-child(7) {
-    background-color: #478070; 
-    border-color: #478070;
-}
-
-#workspaces button.focused {
-    padding: 0px 5px 0px 5px;
-}
-
-#workspaces button.active {
-    padding: 0px 5px 0px 5px;
+    border:        none;
+    border-radius: 0;
+    font-family:   'Hack';
+    font-size:     13px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0.1s;
+    min-height: 15px;
 }
 
 #mode {
-    padding: 0px 0px 0px 16px;          
-    color: #ebdbb2;
+    font-style: oblique;
 }
 
-#clock, 
-#battery {
-    margin: 3px 5px 0px 5px;
-    border-radius: 2px;
-    border-width: 0px 10px 0px 10px;
-    border-style: solid;
+window {
+    color:      #ebebeb;
+    background: rgba(34, 34, 34, 0.2); /* #222222 */
 }
 
-#clock,
-#battery {
-    color: #3d3d3d;
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-spotify, #custom-weather, #custom-mail {
+    margin:     0px 6px 0px 10px;
+    min-width:  25px;
 }
 
 #battery {
-    background-color: #fe8019;
-    border-color: #fe8019;
+    border-top:    2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+#battery.charging {
+    border-top:    2px solid #121014;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 #clock.1 {
-    background-color: #dbf0d3;
-    border-color: #dbf0d3;
-    border-radius: 2px 8px 8px 2px;
+    margin:     0px 16px 0px 10px;
+    min-width:  120px;
 }
 
 #clock.2 {
-    background-color: #8bc4b2;
-    border-color: #8bc4b2;
-    border-radius: 8px 2px 2px 8px;
-}
-
-#clock.3 {
-    background-color: #fe8019;
-    border-color: #fe8019;
-    border-radius: 8px 2px 2px 8px;
+    margin:     0px 16px 0px 10px;
+    min-width:  120px;
 }

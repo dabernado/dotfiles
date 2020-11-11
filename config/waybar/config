@@ -1,36 +1,38 @@
-[{
-    "layer":"top",
-    "margin-top": 20,
-    "margin-bottom": -25,
-    "margin-left": 20,
-    "margin-right": 20,
-    "output":["eDP-1","HDMI-A-1","DP-3"],
-    "modules-left":["sway/workspaces","sway/mode"],
-    "modules-right":["clock#2","battery","clock#1"],
-    "sway/mode": {
-        "format":"<span style=\"Italic\">{}</span>"
-    },
-    "clock#1": {
-        "format":"{:%R}"
+{
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": ["battery", "network"],
+    "modules-right": ["network#vpn", "clock#2", "clock#1"],
+    "sway/window": {
+        "max-length": 50
     },
     "battery": {
-        "format":"{:03}%"
+        "full-at": 95,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        "format-full": "",
+        "format-icons": ["", "", "", "", ""]
     },
-    "clock#2": {
-        "format":"{:%d.%m.%Y}"
-    }
-}, {
-    "layer":"top",
-    "output":"DVI-D-1",
-    "modules-left":["sway/workspaces","sway/mode"],
-    "modules-right":["clock#3","clock#1"],
-    "sway/mode": {
-        "format":"<span style=\"Italic\">{}</span>"
+    "network": {
+        "interface": "wlp3s0",
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP)",
+        "format-disconnected": "Disconnected",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "network#vpn": {
+        "interface": "wg0",
+        "format": "VPN",
+        "format-disconnected": "no VPN"
     },
     "clock#1": {
-        "format":"{:%R}"
+        "format": "{:%R}",
     },
-    "clock#3": {
-        "format":"{:%d.%m.%Y}"
+    "clock#2": {
+        "format": "{:%d.%m.%Y}",
     }
-}]
+}

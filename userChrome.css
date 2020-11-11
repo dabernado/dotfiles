@@ -1,14 +1,14 @@
  :root {
 
    /* Minimal Functional Fox variables*/
-  --mff-bg: #699784;
-  --mff-icon-color: #062b15;
+  --mff-bg: #8761a5;
+  --mff-icon-color: #02150a;
   --mff-nav-toolbar-padding: 8px;
   --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #062b15;
+  --mff-sidebar-color: #02150a;
   --mff-tab-border-radius: 0px;
-  --mff-tab-color: #063319;
-  --mff-tab-font-family: "Hack Nerd Font", sans;
+  --mff-tab-color: #02150a;
+  --mff-tab-font-family: "Hack", sans;
   --mff-tab-font-size: 11pt;
   --mff-tab-font-weight: 400;
   --mff-tab-height: 32px;
@@ -17,7 +17,7 @@
   --mff-tab-soundplaying-bg: #9c89b8;
   --mff-urlbar-color: #02150a;
   --mff-urlbar-focused-color: #062b15;
-  --mff-urlbar-font-family: "Hack Nerd Font", serif;
+  --mff-urlbar-font-family: "Hack", serif;
   --mff-urlbar-font-size: 12pt;
   --mff-urlbar-font-weight: 700;
   --mff-urlbar-results-color: #062b15;
@@ -108,7 +108,7 @@ hbox.tab-content[pinned=true] .tab-text {
   display: flex;
   overflow: hidden;
   justify-content: center;
-width: 50% !important;
+  width: 50% !important;
   max-width: 50% !important;
   min-width: 50% !important;
 }
